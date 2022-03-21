@@ -8594,3 +8594,13 @@ li.menu-item-has-children.active .menu-expand {
 .single-blog {
   background-image: url("../imgs/placeholders/img-13.jpg");
 }
+/* Slick Slider */
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-dots > li {
+  padding: 0px 5px;
+}

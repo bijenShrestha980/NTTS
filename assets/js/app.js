@@ -10,11 +10,23 @@ $(document).ready(function () {
   $("#carausel-1-columns-1").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    dots: false,
-    arrows: false,
+    dots: true,
+    infinite: true,
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    fade: true,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
+
   //Showcase Carousel
   $("#carausel-2-columns-1").slick({
     slidesToShow: 2,
@@ -44,8 +56,8 @@ $(document).ready(function () {
   $("#carausel-3-columns-5").slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    dots: false,
-    arrows: false,
+    dots: true,
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
@@ -64,6 +76,20 @@ $(document).ready(function () {
         },
       },
     ],
+  });
+  // Accordian
+  $("#accordian").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).siblings(".content").slideUp(200);
+      $("#accordian > svg").removeClass("transform rotate-180");
+    } else {
+      $("#accordian > svg").addClass("transform rotate-180");
+      $("#accordian").removeClass("active");
+      $(this).addClass("active");
+      $(".content").slideUp(200);
+      $(this).siblings(".content").slideDown(200);
+    }
   });
 
   // Scroll To Top
