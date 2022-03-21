@@ -31,454 +31,459 @@
 </head>
 
 <body>
-    <div id="__next">
-        <div class="main font-body text-body">
-            <!-- Header -->
-            <header class="bg-transparent sticky-bar mt-4">
-                <div class="container bg-transparent">
-                    <nav class="bg-transparent flex justify-between items-center py-3"><a
-                            class="text-3xl font-semibold leading-none" href="index.html">
-                            <img class="h-10" src="./assets/imgs/logo/ntts-v2.png" alt="NTTS" />
-                        </a>
-                        <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
 
-                            <li class="pt-4 pb-4">
-                                <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
-                                    href="about.html">About Us
-                                </a>
-                            </li>
-                            <li class="pt-4 pb-4">
-                                <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
-                                    href="services.html">Services
-                                </a>
-                            </li>
-                            <li class="group relative pt-4 pb-4 has-child">
-                                <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
-                                    href="index.html">Company
-                                </a>
-                                <ul class="drop-down-menu min-w-200">
-                                    <li>
-                                        <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
-                                            href="team.html">Team
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
-                                            href="testimonials.html">Testimonials
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
-                                            href="pricing.html">Pricing
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
-                                            href="faqs.html">Faqs
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
-                                            href="404.html">404
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="group relative pt-4 pb-4">
-                                <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
-                                    href="blog.html">Blog
-                                </a>
-                            </li>
-                            <li class="pt-4 pb-4">
-                                <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
-                                    href="contact.html">Contact
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="lg:hidden">
-                            <button
-                                class="navbar-burger flex items-center py-2 px-3 text-blue-500 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300"
-                                id="mobile-btn">
-                                <svg class="fill-current h-4 w-4" viewbox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <title>Mobile menu</title>
-                                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </nav>
+    <div class="main font-body text-body">
+        <!-- Preloader -->
+        <div id="loader" class="loader blue-color">
+            <div class="loader-container">
+                <div class='loader-icon'>
+                    <img src="./assets/imgs/placeholders/mobile.svg" alt="NTTS">
                 </div>
-            </header>
-            <!-- Mobile Header -->
-            <div class="hidden navbar-menu relative z-50 transition duration-300" id="mobile-header">
-                <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
-                <nav
-                    class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto transition duration-300">
-                    <div class="flex items-center mb-8">
-                        <a class="mr-auto text-3xl font-semibold leading-none" href="index.html">
-                            <img class="h-10" src="./assets/imgs/logo/ntts-v2.png" alt="NTTS" />
-                        </a>
-                        <button class="navbar-close" id="mobile-close">
-                            <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blue-500"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M6 18L18 6M6 6l12 12"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <div>
-                        <ul class="mobile-menu">
-                            <li class="mb-1 rounded-xl">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl"
-                                    href="about.html">About Us
-                                </a>
-                            </li>
-                            <li class="mb-1">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                                    href="services.html">Services
-                                </a>
-                            </li>
-                            <li class="mb-1">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                                    href="pricing.html">Pricing
-                                </a>
-                            </li>
-                            <li class="mb-1">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                                    href="team.html">Team
-                                </a>
-                            </li>
-                            <li class="mb-1">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                                    href="blog.html">Blogs
-                                </a>
-                            </li>
-                            <li class="mb-1">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                                    href="faqs.html">Faqs
-                                </a>
-                            </li>
-                            <li class="mb-1">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                                    href="testimonials.html">Testimonial
-                                </a>
-                            </li>
-                            <li class="mb-1">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                                    href="contact.html">Contact Us
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="mt-auto">
-                        <p class="my-4 text-xs text-blueGray-400">
-                            <span>Get in Touch</span>
-                            <span class="text-blue-500 hover:text-blue-500 underline">itnttsnepal.com</span>
-                        </p>
-                        <a class="inline-block px-1" href="https://facebook.com/">
-                            <img src="./assets/imgs/icons/facebook-blue.svg" alt="NTTS" />
-                        </a>
-                        <a class="inline-block px-1" href="https://twitter.com/">
-                            <img src="./assets/imgs/icons/twitter-blue.svg" alt="NTTS" />
-                        </a>
-                        <a class="inline-block px-1" href="https://www.instagram.com/">
-                            <img src="./assets/imgs/icons/instagram-blue.svg" alt="NTTS" />
-                        </a>
-                    </div>
-                </nav>
             </div>
+        </div>
+        <!-- Header -->
+        <header class="bg-transparent sticky-bar mt-4">
+            <div class="container bg-transparent">
+                <nav class="bg-transparent flex justify-between items-center py-3"><a
+                        class="text-3xl font-semibold leading-none" href="index.html">
+                        <img class="h-10" src="./assets/imgs/logo/ntts-v2.png" alt="NTTS" />
+                    </a>
+                    <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
 
-            <!-- Page Navigation -->
-            <section class="-mt-24 pt-40 pb-12 bg-blueGray-100">
-                <div class="container">
-                    <h1 class="text-2xl lg:text-5xl font-bold mb-5 wow animate__ animate__fadeIn  animated animated"
-                        style="visibility: visible;">Our Services
-                    </h1>
-                    <ul class="flex text-gray-500 text-sm lg:text-sm pb-12 wow animate__ animate__fadeIn  animated animated"
-                        style="visibility: visible;">
-                        <li class="inline-flex items-center">
-                            <a href="#" class="hover:text-blue-500 text-gray-800">Home</a>
-                            <svg fill="currentColor" viewBox="0 0 20 20" class="h-5 w-auto text-gray-300">
-                                <path fill-rule="evenodd"
-                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                    clip-rule="evenodd">
-                                </path>
-                            </svg>
+                        <li class="pt-4 pb-4">
+                            <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                                href="about.html">About Us
+                            </a>
                         </li>
-                        <li class="inline-flex items-center">
-                            <a href="#" class="hover:text-blue-500 text-gray-800">Our
-                                Services
+                        <li class="pt-4 pb-4">
+                            <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                                href="services.html">Services
+                            </a>
+                        </li>
+                        <li class="group relative pt-4 pb-4 has-child">
+                            <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                                href="index.html">Company
+                            </a>
+                            <ul class="drop-down-menu min-w-200">
+                                <li>
+                                    <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                                        href="team.html">Team
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                                        href="testimonials.html">Testimonials
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                                        href="pricing.html">Pricing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                                        href="faqs.html">Faqs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                                        href="404.html">404
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="group relative pt-4 pb-4">
+                            <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                                href="blog.html">Blog
+                            </a>
+                        </li>
+                        <li class="pt-4 pb-4">
+                            <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                                href="contact.html">Contact
                             </a>
                         </li>
                     </ul>
-                </div>
-            </section>
-
-            <!-- Service -->
-            <section class="pt-12">
-                <a href="./product-detail.html">
-                    <div class="container py-12 mx-auto">
-                        <div class="flex flex-wrap">
-                            <div class="w-full md:w-1/2 pr-12 px-3 order-0 md:order-0 mb-12 md:mb-0 wow animate__ animate__fadeIn  animated"
-                                data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
-                                <img class="sm:max-w-sm lg:max-w-full mx-auto"
-                                    src="./assets/imgs/placeholders/slider3.png" alt="NTTS">
-                            </div>
-                            <div class="w-full md:w-1/2 px-3 order-1 md:order-1">
-                                <div class="max-w-md-2">
-                                    <div class="mb-4">
-                                        <h2 class="text-4xl mt-3 font-bold font-heading wow animate__ animate__fadeIn  animated"
-                                            data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s;">
-                                            <span class="text-blue-500">Web design </span>
-                                        </h2>
-                                    </div>
-                                    <p class="mb-6 leading-loose text-blueGray-400 wow animate__ animate__fadeIn  animated"
-                                        data-wow-delay=".1s"
-                                        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-                                        Lorem
-                                        ipsum dolor
-                                        sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.
-                                    </p>
-                                    <div class="flex flex-wrap">
-                                        <div class="w-full md:w-1/2 items-start pt-4 pb-8 wow animate__ animate__fadeIn  animated"
-                                            data-wow-delay=".2s"
-                                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-                                            <div class="w-8 mb-5 text-blue-500">
-                                                <span
-                                                    class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">1
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <h3 class="mb-2 text-xl font-semibold font-heading">Web design UX/UI
-                                                </h3>
-                                                <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
-                                                    sit
-                                                    amet
-                                                    consectetur adipisicing elit. Veritatis expedita animi.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="w-full md:w-1/2 items-start py-4 wow animate__ animate__fadeIn  animated"
-                                            data-wow-delay=".3s"
-                                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
-                                            <div class="w-8 mb-5 text-blue-500">
-                                                <span
-                                                    class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">2
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <h3 class="mb-2 text-xl font-semibold font-heading">React Develop</h3>
-                                                <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
-                                                    sit
-                                                    amet
-                                                    consectetur adipisicing elit. Veritatis expedita animi.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="w-full md:w-1/2 items-start py-4 wow animate__ animate__fadeIn  animated"
-                                            data-wow-delay=".4s"
-                                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
-                                            <div class="w-8 mb-5 text-blue-500">
-                                                <span
-                                                    class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">3
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <h3 class="mb-2 text-xl font-semibold font-heading">Ecommerce Build</h3>
-                                                <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
-                                                    sit
-                                                    amet
-                                                    consectetur adipisicing elit. Veritatis expedita animi.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="w-full md:w-1/2 items-start py-4 wow animate__ animate__fadeIn  animated"
-                                            data-wow-delay=".5s"
-                                            style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
-                                            <div class="w-8 mb-5 text-blue-500">
-                                                <span
-                                                    class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">4
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <h3 class="mb-2 text-xl font-semibold font-heading">CMS develop</h3>
-                                                <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
-                                                    sit
-                                                    amet
-                                                    consectetur adipisicing elit. Veritatis expedita animi.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="lg:hidden">
+                        <button
+                            class="navbar-burger flex items-center py-2 px-3 text-blue-500 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300"
+                            id="mobile-btn">
+                            <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Mobile menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                            </svg>
+                        </button>
                     </div>
-                </a>
-            </section>
-            <!-- Service -->
-            <section class="pt-12">
-                <a href="./product-detail.html">
-                    <div class="container py-12 mx-auto">
-                        <div class="flex flex-wrap">
-                            <div class="w-full md:w-1/2 px-3 order-0 md:order-0">
-                                <div class="max-w-md-2">
-                                    <div class="mb-4">
-                                        <h2 class="text-4xl mt-3 font-bold font-heading wow animate__ animate__fadeIn  animated"
-                                            data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s;">
-                                            <span class="text-blue-500">Mobile Application </span>
-                                        </h2>
-                                    </div>
-                                    <p class="mb-6 leading-loose text-blueGray-400 wow animate__ animate__fadeIn  animated"
-                                        data-wow-delay=".1s"
-                                        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-                                        Lorem
-                                        ipsum dolor
-                                        sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.
-                                    </p>
-                                    <div class="flex flex-wrap">
-                                        <div class="w-full md:w-1/2 items-start pt-4 pb-8 wow animate__ animate__fadeIn  animated"
-                                            data-wow-delay=".2s"
-                                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-                                            <div class="w-8 mb-5 text-blue-500">
-                                                <span
-                                                    class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">1
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <h3 class="mb-2 text-xl font-semibold font-heading">Web design UX/UI
-                                                </h3>
-                                                <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
-                                                    sit
-                                                    amet
-                                                    consectetur adipisicing elit. Veritatis expedita animi.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="w-full md:w-1/2 items-start py-4 wow animate__ animate__fadeIn  animated"
-                                            data-wow-delay=".3s"
-                                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
-                                            <div class="w-8 mb-5 text-blue-500">
-                                                <span
-                                                    class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">2
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <h3 class="mb-2 text-xl font-semibold font-heading">React Develop</h3>
-                                                <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
-                                                    sit
-                                                    amet
-                                                    consectetur adipisicing elit. Veritatis expedita animi.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="w-full md:w-1/2 items-start py-4 wow animate__ animate__fadeIn  animated"
-                                            data-wow-delay=".4s"
-                                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
-                                            <div class="w-8 mb-5 text-blue-500">
-                                                <span
-                                                    class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">3
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <h3 class="mb-2 text-xl font-semibold font-heading">Ecommerce Build</h3>
-                                                <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
-                                                    sit
-                                                    amet
-                                                    consectetur adipisicing elit. Veritatis expedita animi.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="w-full md:w-1/2 items-start py-4 wow animate__ animate__fadeIn  animated"
-                                            data-wow-delay=".5s"
-                                            style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
-                                            <div class="w-8 mb-5 text-blue-500">
-                                                <span
-                                                    class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">4
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <h3 class="mb-2 text-xl font-semibold font-heading">CMS develop</h3>
-                                                <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
-                                                    sit
-                                                    amet
-                                                    consectetur adipisicing elit. Veritatis expedita animi.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-full md:w-1/2 pr-12 px-3 order-1 md:order-1 mb-12 md:mb-0 wow animate__ animate__fadeIn  animated"
-                                data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
-                                <img class="sm:max-w-sm lg:max-w-full mx-auto"
-                                    src="./assets/imgs/placeholders/slider1.jpg" alt="NTTS">
-                            </div>
-
-                        </div>
-                    </div>
-                </a>
-            </section>
-
-
-            <!-- Footer -->
-            <section class="py-20">
-                <div class="container px-4 mx-auto wow animate__animated animate__fadeIn" data-wow-delay=".3s">
-                    <div class="flex flex-wrap mb-12 lg:mb-20 -mx-3 text-center lg:text-left">
-                        <div class="w-full lg:w-1/5 px-3 mb-6 lg:mb-0"><a
-                                class="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none"
-                                href="index.html">
-                                <img class="h-20" src="assets/imgs/logo/ntts-v2.png" alt="NTTS" />
-                            </a>
-                        </div>
-                        <div class="w-full lg:w-2/5 px-3 mb-8 lg:mb-0">
-                            <p
-                                class="max-w-md mx-auto lg:max-w-full lg:mx-0 lg:pr-32 lg:text-lg text-blueGray-400 leading-relaxed">
-                                Helping you <strong>maximize</strong> your reach</p>
-                        </div>
-                        <div class="w-full lg:w-1/5 px-3 mb-8 lg:mb-0">
-                            <p class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Office</p>
-                            <p class="lg:text-lg text-blueGray-400">Sinamangal, Kathmandu, Nepal</p>
-                        </div>
-                        <div class="w-full lg:w-1/5 px-3">
-                            <p class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Contacts</p>
-                            <p class="lg:text-lg text-blueGray-400">(+977) 9876543210</p>
-                            <p class="lg:text-lg text-blueGray-400">itnttsnepal</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col lg:flex-row items-center lg:justify-between">
-                        <p class="text-sm text-blueGray-400">© 2022. All rights reserved. Designed by
-                            <a class="text-blue-400" href="nttsnepal.com" target="_blank">nttsnepal.com</a>
-                        </p>
-                        <div class="order-first lg:order-last -mx-2 mb-4 lg:mb-0">
-                            <a class="inline-block px-2" href="https://facebook.com/">
-                                <img src="assets/imgs/icons/facebook-blue.svg" alt="NTTS" />
-                            </a>
-                            <a class="inline-block px-2" href="https://twitter.com/">
-                                <img src="assets/imgs/icons/twitter-blue.svg" alt="NTTS" />
-                            </a>
-                            <a class="inline-block px-2" href="https://www.instagram.com/">
-                                <img src="assets/imgs/icons/instagram-blue.svg" alt="NTTS" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Scroll Up -->
-            <div style="position:fixed;bottom:50px;right:30px;cursor:pointer;transition-duration:0.2s;transition-timing-function:linear;transition-delay:0s;opacity:0;visibility:hidden;transition-property:opacity, visibility"
-                id="scrollUp">
-                <a>
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
-                    </svg>
-                </a>
+                </nav>
             </div>
+        </header>
+        <!-- Mobile Header -->
+        <div class="hidden navbar-menu relative z-50 transition duration-300" id="mobile-header">
+            <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
+            <nav
+                class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto transition duration-300">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl font-semibold leading-none" href="index.html">
+                        <img class="h-10" src="./assets/imgs/logo/ntts-v2.png" alt="NTTS" />
+                    </a>
+                    <button class="navbar-close" id="mobile-close">
+                        <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blue-500"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul class="mobile-menu">
+                        <li class="mb-1 rounded-xl">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl"
+                                href="about.html">About Us
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                                href="services.html">Services
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                                href="pricing.html">Pricing
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                                href="team.html">Team
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                                href="blog.html">Blogs
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                                href="faqs.html">Faqs
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                                href="testimonials.html">Testimonial
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                                href="contact.html">Contact Us
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="mt-auto">
+                    <p class="my-4 text-xs text-blueGray-400">
+                        <span>Get in Touch</span>
+                        <span class="text-blue-500 hover:text-blue-500 underline">itnttsnepal.com</span>
+                    </p>
+                    <a class="inline-block px-1" href="https://facebook.com/">
+                        <img src="./assets/imgs/icons/facebook-blue.svg" alt="NTTS" />
+                    </a>
+                    <a class="inline-block px-1" href="https://twitter.com/">
+                        <img src="./assets/imgs/icons/twitter-blue.svg" alt="NTTS" />
+                    </a>
+                    <a class="inline-block px-1" href="https://www.instagram.com/">
+                        <img src="./assets/imgs/icons/instagram-blue.svg" alt="NTTS" />
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Page Navigation -->
+        <section class="-mt-24 pt-40 pb-12 bg-blueGray-100">
+            <div class="container">
+                <h1 class="text-2xl lg:text-5xl font-bold mb-5 wow animate__ animate__fadeIn  animated animated"
+                    style="visibility: visible;">Our Services
+                </h1>
+                <ul class="flex text-gray-500 text-sm lg:text-sm pb-12 wow animate__ animate__fadeIn  animated animated"
+                    style="visibility: visible;">
+                    <li class="inline-flex items-center">
+                        <a href="#" class="hover:text-blue-500 text-gray-800">Home</a>
+                        <svg fill="currentColor" viewBox="0 0 20 20" class="h-5 w-auto text-gray-300">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd">
+                            </path>
+                        </svg>
+                    </li>
+                    <li class="inline-flex items-center">
+                        <a href="#" class="hover:text-blue-500 text-gray-800">Our
+                            Services
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Service -->
+        <section class="pt-12">
+            <a href="./product-detail.html">
+                <div class="container py-12 mx-auto">
+                    <div class="flex flex-wrap">
+                        <div class="w-full md:w-1/2 pr-12 px-3 order-0 md:order-0 mb-12 md:mb-0 wow animate__ animate__fadeIn  animated"
+                            data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
+                            <img class="sm:max-w-sm lg:max-w-full mx-auto" src="./assets/imgs/placeholders/slider3.png"
+                                alt="NTTS">
+                        </div>
+                        <div class="w-full md:w-1/2 px-3 order-1 md:order-1">
+                            <div class="max-w-md-2">
+                                <div class="mb-4">
+                                    <h2 class="text-4xl mt-3 font-bold font-heading wow animate__ animate__fadeIn  animated"
+                                        data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s;">
+                                        <span class="text-blue-500">Web design </span>
+                                    </h2>
+                                </div>
+                                <p class="mb-6 leading-loose text-blueGray-400 wow animate__ animate__fadeIn  animated"
+                                    data-wow-delay=".1s"
+                                    style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                    Lorem
+                                    ipsum dolor
+                                    sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.
+                                </p>
+                                <div class="flex flex-wrap">
+                                    <div class="w-full md:w-1/2 items-start pt-4 pb-8 wow animate__ animate__fadeIn  animated"
+                                        data-wow-delay=".2s"
+                                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                                        <div class="w-8 mb-5 text-blue-500">
+                                            <span
+                                                class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">1
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h3 class="mb-2 text-xl font-semibold font-heading">Web design UX/UI
+                                            </h3>
+                                            <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
+                                                sit
+                                                amet
+                                                consectetur adipisicing elit. Veritatis expedita animi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-1/2 items-start py-4 wow animate__ animate__fadeIn  animated"
+                                        data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="w-8 mb-5 text-blue-500">
+                                            <span
+                                                class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">2
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h3 class="mb-2 text-xl font-semibold font-heading">React Develop</h3>
+                                            <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
+                                                sit
+                                                amet
+                                                consectetur adipisicing elit. Veritatis expedita animi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-1/2 items-start py-4 wow animate__ animate__fadeIn  animated"
+                                        data-wow-delay=".4s"
+                                        style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
+                                        <div class="w-8 mb-5 text-blue-500">
+                                            <span
+                                                class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">3
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h3 class="mb-2 text-xl font-semibold font-heading">Ecommerce Build</h3>
+                                            <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
+                                                sit
+                                                amet
+                                                consectetur adipisicing elit. Veritatis expedita animi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-1/2 items-start py-4 wow animate__ animate__fadeIn  animated"
+                                        data-wow-delay=".5s"
+                                        style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                        <div class="w-8 mb-5 text-blue-500">
+                                            <span
+                                                class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">4
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h3 class="mb-2 text-xl font-semibold font-heading">CMS develop</h3>
+                                            <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
+                                                sit
+                                                amet
+                                                consectetur adipisicing elit. Veritatis expedita animi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <!-- Service -->
+        <section class="pt-12">
+            <a href="./product-detail.html">
+                <div class="container py-12 mx-auto">
+                    <div class="flex flex-wrap">
+                        <div class="w-full md:w-1/2 px-3 order-0 md:order-0">
+                            <div class="max-w-md-2">
+                                <div class="mb-4">
+                                    <h2 class="text-4xl mt-3 font-bold font-heading wow animate__ animate__fadeIn  animated"
+                                        data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s;">
+                                        <span class="text-blue-500">Mobile Application </span>
+                                    </h2>
+                                </div>
+                                <p class="mb-6 leading-loose text-blueGray-400 wow animate__ animate__fadeIn  animated"
+                                    data-wow-delay=".1s"
+                                    style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                    Lorem
+                                    ipsum dolor
+                                    sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.
+                                </p>
+                                <div class="flex flex-wrap">
+                                    <div class="w-full md:w-1/2 items-start pt-4 pb-8 wow animate__ animate__fadeIn  animated"
+                                        data-wow-delay=".2s"
+                                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                                        <div class="w-8 mb-5 text-blue-500">
+                                            <span
+                                                class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">1
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h3 class="mb-2 text-xl font-semibold font-heading">Web design UX/UI
+                                            </h3>
+                                            <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
+                                                sit
+                                                amet
+                                                consectetur adipisicing elit. Veritatis expedita animi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-1/2 items-start py-4 wow animate__ animate__fadeIn  animated"
+                                        data-wow-delay=".3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="w-8 mb-5 text-blue-500">
+                                            <span
+                                                class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">2
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h3 class="mb-2 text-xl font-semibold font-heading">React Develop</h3>
+                                            <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
+                                                sit
+                                                amet
+                                                consectetur adipisicing elit. Veritatis expedita animi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-1/2 items-start py-4 wow animate__ animate__fadeIn  animated"
+                                        data-wow-delay=".4s"
+                                        style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
+                                        <div class="w-8 mb-5 text-blue-500">
+                                            <span
+                                                class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">3
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h3 class="mb-2 text-xl font-semibold font-heading">Ecommerce Build</h3>
+                                            <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
+                                                sit
+                                                amet
+                                                consectetur adipisicing elit. Veritatis expedita animi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-1/2 items-start py-4 wow animate__ animate__fadeIn  animated"
+                                        data-wow-delay=".5s"
+                                        style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                        <div class="w-8 mb-5 text-blue-500">
+                                            <span
+                                                class="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">4
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h3 class="mb-2 text-xl font-semibold font-heading">CMS develop</h3>
+                                            <p class="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor,
+                                                sit
+                                                amet
+                                                consectetur adipisicing elit. Veritatis expedita animi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 pr-12 px-3 order-1 md:order-1 mb-12 md:mb-0 wow animate__ animate__fadeIn  animated"
+                            data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
+                            <img class="sm:max-w-sm lg:max-w-full mx-auto" src="./assets/imgs/placeholders/slider1.jpg"
+                                alt="NTTS">
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+        </section>
+
+
+        <!-- Footer -->
+        <section class="py-20">
+            <div class="container px-4 mx-auto wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+                <div class="flex flex-wrap mb-12 lg:mb-20 -mx-3 text-center lg:text-left">
+                    <div class="w-full lg:w-1/5 px-3 mb-6 lg:mb-0"><a
+                            class="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none" href="index.html">
+                            <img class="h-20" src="assets/imgs/logo/ntts-v2.png" alt="NTTS" />
+                        </a>
+                    </div>
+                    <div class="w-full lg:w-2/5 px-3 mb-8 lg:mb-0">
+                        <p
+                            class="max-w-md mx-auto lg:max-w-full lg:mx-0 lg:pr-32 lg:text-lg text-blueGray-400 leading-relaxed">
+                            Helping you <strong>maximize</strong> your reach</p>
+                    </div>
+                    <div class="w-full lg:w-1/5 px-3 mb-8 lg:mb-0">
+                        <p class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Office</p>
+                        <p class="lg:text-lg text-blueGray-400">Sinamangal, Kathmandu, Nepal</p>
+                    </div>
+                    <div class="w-full lg:w-1/5 px-3">
+                        <p class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Contacts</p>
+                        <p class="lg:text-lg text-blueGray-400">(+977) 9876543210</p>
+                        <p class="lg:text-lg text-blueGray-400">itnttsnepal</p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center lg:justify-between">
+                    <p class="text-sm text-blueGray-400">© 2022. All rights reserved. Designed by
+                        <a class="text-blue-400" href="nttsnepal.com" target="_blank">nttsnepal.com</a>
+                    </p>
+                    <div class="order-first lg:order-last -mx-2 mb-4 lg:mb-0">
+                        <a class="inline-block px-2" href="https://facebook.com/">
+                            <img src="assets/imgs/icons/facebook-blue.svg" alt="NTTS" />
+                        </a>
+                        <a class="inline-block px-2" href="https://twitter.com/">
+                            <img src="assets/imgs/icons/twitter-blue.svg" alt="NTTS" />
+                        </a>
+                        <a class="inline-block px-2" href="https://www.instagram.com/">
+                            <img src="assets/imgs/icons/instagram-blue.svg" alt="NTTS" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Scroll Up -->
+        <div style="position:fixed;bottom:50px;right:30px;cursor:pointer;transition-duration:0.2s;transition-timing-function:linear;transition-delay:0s;opacity:0;visibility:hidden;transition-property:opacity, visibility"
+            id="scrollUp">
+            <a>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18">
+                    </path>
+                </svg>
+            </a>
         </div>
     </div>
+
 </body>
 
 </html>
