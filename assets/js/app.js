@@ -78,16 +78,12 @@ $(document).ready(function () {
     ],
   });
   // Accordian
-  $("#accordian").on("click", function () {
+  $("#accordian > button").on("click", function () {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
       $(this).siblings(".content").slideUp(200);
-      $("#accordian > svg").removeClass("transform rotate-180");
     } else {
-      $("#accordian > svg").addClass("transform rotate-180");
-      $("#accordian").removeClass("active");
       $(this).addClass("active");
-      $(".content").slideUp(200);
       $(this).siblings(".content").slideDown(200);
     }
   });
