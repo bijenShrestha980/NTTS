@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <meta name="viewport" content="width=device-width" />
+    <meta charSet="utf-8" />
+    <title>NTTS</title>
+    <!-- Custom CSS -->
+    <link rel="preload" href="../assets/css/styles.css" as="style" />
+    <link rel="stylesheet" href="../assets/css/styles.css" data-n-g="" /><noscript data-n-css=""></noscript>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+
+    <!-- JQuery -->
+    <script src="../assets/js/jquery-3.6.0 (1).js"></script>
+    <!-- Slick JS -->
+    <script src="../assets/js/slick.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/app.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="main font-body text-body">
+        <!-- Preloader -->
+        <div id="loader" class="loader blue-color">
+            <div class="loader-container">
+                <div class='loader-icon'>
+                    <img src="../assets/imgs/placeholders/mobile.svg" alt="NTTS">
+                </div>
+            </div>
+        </div>
+        <!-- Header -->
+        <header class="bg-transparent sticky-bar mt-4">
+            <div class="container bg-transparent">
+                <nav class="bg-transparent flex justify-between items-center py-3"><a
+                        class="text-3xl font-semibold leading-none" href="../index.html">
+                        <!-- <img class="h-10" src="./assets/imgs/logo/ntts-v2.png" alt="NTTS" /> -->
+                        <h2 class="md:text-4xl font-bold font-heading wow animate__animated animate__fadeIn"
+                            data-wow-delay=".3s">
+                            Software
+                            <span class="text-blue-500">Sewa</span>
+                        </h2>
+                    </a>
+                    <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
+
+                        <li class="pt-4 pb-4">
+                            <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                                href="../about.html">About Us
+                            </a>
+                        </li>
+                        <li class="pt-4 pb-4">
+                            <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                                href="../services.html">Services
+                            </a>
+                        </li>
+                        <li class="group relative pt-4 pb-4 has-child">
+                            <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                                href="../team.html">Company
+                            </a>
+                            <!-- <ul class="drop-down-menu min-w-200">
+                                                <li>
+                                                    <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                                                        href="team.html">Team
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                                                        href="testimonials.html">Testimonials
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                                                        href="pricing.html">Pricing
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                                                        href="faqs.html">Faqs
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                                                        href="404.html">404
+                                                    </a>
+                                                </li>
+                                            </ul> -->
+                        </li>
+                        <!-- <li class="group relative pt-4 pb-4">
+                                            <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                                                href="blog.html">Blog
+                                            </a>
+                                        </li> -->
+                        <li class="pt-4 pb-4">
+                            <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                                href="../contact.html">Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="lg:hidden">
+                        <button
+                            class="navbar-burger flex items-center py-2 px-3 text-blue-500 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300"
+                            id="mobile-btn">
+                            <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Mobile menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Mobile Header -->
+        <div class="hidden navbar-menu relative z-50 transition duration-300" id="mobile-header">
+            <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
+            <nav
+                class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto transition duration-300">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl font-semibold leading-none" href="../index.html">
+                        <!-- <img class="h-10" src="./assets/imgs/logo/ntts-v2.png" alt="NTTS" /> -->
+                        <h2 class="md:text-4xl font-bold font-heading wow animate__animated animate__fadeIn"
+                            data-wow-delay=".3s">
+                            Software
+                            <span class="text-blue-500">Sewa</span>
+                        </h2>
+                    </a>
+                    <button class="navbar-close" id="mobile-close">
+                        <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blue-500"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul class="mobile-menu">
+                        <li class="mb-1 rounded-xl">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl"
+                                href="../about.html">About Us
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                                href="../services.html">Services
+                            </a>
+                        </li>
+                        <!-- <li class="mb-1">
+                                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                                                href="pricing.html">Pricing
+                                            </a>
+                                        </li> -->
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                                href="../team.html">Team
+                            </a>
+                        </li>
+                        <!-- <li class="mb-1">
+                                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                                                href="blog.html">Blogs
+                                            </a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                                                href="faqs.html">Faqs
+                                            </a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                                                href="testimonials.html">Testimonial
+                                            </a>
+                                        </li> -->
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                                href="../contact.html">Contact Us
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="mt-auto">
+                    <p class="my-4 text-xs text-blueGray-400">
+                        <span>Get in Touch</span>
+                        <span class="text-blue-500 hover:text-blue-500 underline">itnttsnepal.com</span>
+                    </p>
+                    <a class="inline-block px-1" href="https://facebook.com/">
+                        <img src="../assets/imgs/icons/facebook-blue.svg" alt="NTTS" />
+                    </a>
+                    <a class="inline-block px-1" href="https://twitter.com/">
+                        <img src="../assets/imgs/icons/twitter-blue.svg" alt="NTTS" />
+                    </a>
+                    <a class="inline-block px-1" href="https://www.instagram.com/">
+                        <img src="../assets/imgs/icons/instagram-blue.svg" alt="NTTS" />
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Page Navigation -->
+        <section class="-mt-24 pt-40 pb-12 bg-blueGray-100">
+            <div class="container">
+                <h1 class="text-2xl lg:text-5xl font-bold mb-5 wow animate__ animate__fadeIn  animated animated"
+                    style="visibility: visible;">Pricing
+                </h1>
+                <ul class="flex text-gray-500 text-sm lg:text-sm pb-12 wow animate__ animate__fadeIn  animated animated"
+                    style="visibility: visible;">
+                    <li class="inline-flex items-center">
+                        <a href="#" class="hover:text-blue-500 text-gray-800">Home</a>
+                        <svg fill="currentColor" viewBox="0 0 20 20" class="h-5 w-auto text-gray-300">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd">
+                            </path>
+                        </svg>
+                    </li>
+                    <li class="inline-flex items-center">
+                        <a href="#" class="hover:text-blue-500 text-gray-800">
+                            Pricing
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="py-20 xl:bg-contain bg-top bg-no-repeat">
+            <div class="container px-4 mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="max-w-lg mx-auto mb-4 text-4xl font-bold font-heading wow animate__animated animate__fadeIn"
+                        data-wow-delay=".2s">
+                        <span>Start saving time today and</span>
+                        <span class="text-blue-500">
+                            choose
+                        </span>
+                        <span>your best plan</span>
+                    </h2>
+                    <p class="max-w-sm mx-auto text-lg text-blueGray-400 wow animate__animated animate__fadeInDown"
+                        data-wow-delay=".5s">Best price for every sites
+                    </p>
+                </div>
+                <div class="flex flex-wrap -mx-3">
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+                        <div class="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn"
+                            data-wow-delay=".2s">
+                            <img class="h-20 mb-6 mx-auto" src="../assets/imgs/icons/startup.svg" alt="NTTS" />
+                            <h3 class="mb-2 text-4xl font-bold font-heading">Startup</h3>
+                            <!-- <span class="text-4xl text-blue-500 font-bold font-heading mb-8">NPR. 15,000
+                            </span> -->
+                            <div class="flex flex-col items-center mb-8">
+                                <ul class="text-blueGray-400">
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 none mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Free Available Domain For Your Company For 1 Year</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 none mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Free Unlimited Storage Hosting For 1 Year</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 none mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Website Made In PHP Codeigniter</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 none mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Free User Manual & Training</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 none mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">24/7 Live Support. 100% Uptime Guarantee</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="block sm:inline-block py-4 px-6 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded"
+                                    href="../contact.html">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+                        <div class="hover-up-5 pt-16 pb-8 px-4 text-center text-white bg-blue-500 rounded shadow wow animate__animated animate__fadeIn"
+                            data-wow-delay=".4s">
+                            <img class="h-20 mb-6 mx-auto" src="../assets/imgs/icons/agency.svg" alt="NTTS" />
+                            <h3 class="mb-2 text-4xl font-bold font-heading">Agency</h3>
+                            <!-- <span class="text-4xl font-bold font-heading mb-8">NPR. 25,000</span> -->
+                            <div class="flex flex-col items-center mb-8">
+                                <ul>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Domain For Your Company For + Year</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Unlimited Storage Hosting For + Year</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Website Made In PHP Codeigniter</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Free User Manual & Training</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">24/7 Live Support. 100% Uptime Guarantee</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">SEO Optimized</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Progressive Web App (PWA) Support</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">AWS S3 Integration</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Password Hashing</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="block sm:inline-block py-4 px-6 text-xs font-semibold leading-none border border-blue-400 hover:border-blue-400 rounded"
+                                    href="../contact.html">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/3 px-3 mb-6">
+                        <div class="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn"
+                            data-wow-delay=".6s">
+                            <img class="h-20 mb-6 mx-auto" src="../assets/imgs/icons/enterprise.svg" alt="NTTS" />
+                            <h3 class="mb-2 text-4xl font-bold font-heading">Enterprise</h3>
+                            <!-- <span class="text-4xl text-blue-500 font-bold font-heading mb-8">NPR. 40,000</span> -->
+                            <div class="flex flex-col items-center mb-8">
+                                <ul class="text-blueGray-400">
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Mobile Application Support</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Domain For Your Company For + Year</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Unlimited Storage Hosting For + Year</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Website Made In PHP Codeigniter</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Free User Manual & Training</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">24/7 Live Support. 100% Uptime Guarantee</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">SEO Optimized</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Progressive Web App (PWA) Support</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">AWS S3 Integration</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Cross-Site Request Forgery (CSRF) Prevention</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Cross-Site Scripting (XSS) Prevention</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Password Hashing</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-4 h-4 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="flex-1">Avoiding SQL Injection</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="block sm:inline-block py-4 px-6 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded"
+                                    href="../contact.html">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="py-20">
+            <div class="container px-4 mx-auto wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+                <div class="flex flex-wrap mb-12 lg:mb-20 -mx-3 text-center lg:text-left">
+                    <div class="w-full lg:w-1/5 px-3 mb-6 lg:mb-0"><a
+                            class="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none"
+                            href="../index.html">
+                            <!-- <img class="h-20" src="./assets/imgs/logo/ntts-v2.png" alt="NTTS" /> -->
+                            <h2 class="md:text-4xl font-bold font-heading wow animate__animated animate__fadeIn"
+                                data-wow-delay=".3s">
+                                Software
+                                <span class="text-blue-500">Sewa</span>
+                        </a>
+                    </div>
+                    <div class="w-full lg:w-2/5 px-3 mb-8 lg:mb-0">
+                        <p
+                            class="max-w-md mx-auto lg:max-w-full lg:mx-0 lg:pr-32 lg:text-lg text-blueGray-400 leading-relaxed">
+                            Helping you <strong>maximize</strong> your reach</p>
+                    </div>
+                    <div class="w-full lg:w-1/5 px-3 mb-8 lg:mb-0">
+                        <p class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Office</p>
+                        <p class="lg:text-lg text-blueGray-400">Sinamangal, Kathmandu, Nepal</p>
+                    </div>
+                    <div class="w-full lg:w-1/5 px-3">
+                        <p class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Contacts</p>
+                        <p class="lg:text-lg text-blueGray-400">(+977) 9801881003</p>
+                        <p class="lg:text-lg text-blueGray-400">itnttsnepal</p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center lg:justify-between">
+                    <p class="text-sm text-blueGray-400">© 2022. All rights reserved. Designed by
+                        <a class="text-blue-400" href="nttsnepal.com" target="_blank">nttsnepal.com</a>
+                    </p>
+                    <div class="order-first lg:order-last -mx-2 mb-4 lg:mb-0">
+                        <a class="inline-block px-2" href="https://facebook.com/">
+                            <img src="../assets/imgs/icons/facebook-blue.svg" alt="NTTS" />
+                        </a>
+                        <a class="inline-block px-2" href="https://twitter.com/">
+                            <img src="../assets/imgs/icons/twitter-blue.svg" alt="NTTS" />
+                        </a>
+                        <a class="inline-block px-2" href="https://www.instagram.com/">
+                            <img src="../assets/imgs/icons/instagram-blue.svg" alt="NTTS" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Scroll Up -->
+        <div style="position:fixed;bottom:50px;right:30px;cursor:pointer;transition-duration:0.2s;transition-timing-function:linear;transition-delay:0s;opacity:0;visibility:hidden;transition-property:opacity, visibility"
+            id="scrollUp">
+            <a>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
